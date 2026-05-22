@@ -19,7 +19,7 @@ $_description = Read-Host -Prompt 'Input brief description of VM'
 New-vm -Name $_name -ResourcePool $_cluster -Location $_loc -Datastore $_DS -Template $_template -Description $_description -DiskStorageFormat Thin -ErrorVariable ProcessError #-ErrorAction SilentlyContinue
 If ($ProcessError) {
 Write-Host "                                                                    " -foregroundcolor white -backgroundcolor blue
-Write-Host ".......................Something's Fucked .........................." -foregroundcolor black -backgroundcolor red
+Write-Host "......................Something's Not Right........................." -foregroundcolor black -backgroundcolor red
 Write-Host "                                                                    " -foregroundcolor white -backgroundcolor blue
 }
 if (!$ProcessError) { 
