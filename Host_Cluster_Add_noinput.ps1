@@ -1,4 +1,4 @@
-$esxihosts = ("10.1.1.1","10.1.1.2")
+$esxihosts = ("IP1","IP2")
 $esxihostuser = "root"
 $esxihostpasswd = "password"
 $vcentercluster = "name-of-cluster"
